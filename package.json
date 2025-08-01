@@ -5,9 +5,12 @@
   "scripts": {
     "test": "brittle test/*.test.js"
   },
+  "files": [
+    "index.js"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Helper to create a Pear IPC client",
   "dependencies": {
     "b4a": "^1.6.7",
     "bare-path": "^3.0.0",
@@ -20,5 +23,17 @@
     "brittle": "^3.17.0",
     "standard": "^17.1.2",
     "test-tmp": "^1.4.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/pear-ipc-client.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/holepunchto/pear-ipc-client/issues"
+  },
+  "homepage": "https://github.com/holepunchto/pear-ipc-client#readme"
 }

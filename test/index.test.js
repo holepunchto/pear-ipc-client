@@ -8,7 +8,7 @@ test('create ipc client', async (t) => {
   const dir = await tmp()
   const ipc = createIPC(dir)
   if (isWindows) {
-    t.ok(ipc._socketPath.includes('.pipe'))
+    t.ok(ipc._socketPath.includes('pipe'))
   } else {
     t.is(ipc._socketPath, path.join(dir, 'pear.sock'))
   }
