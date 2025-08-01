@@ -5,12 +5,12 @@ const ipc = createIPC(pearDir)
 await ipc.ready()
 
 const link = Pear.key ? Pear.config.applink : Pear.config.dir
-const stream = await ipc.drop({ link })
+const stream = await ipc.reset({ link })
 
 await new Promise((resolve) => {
   stream.on('data', (res) => {
     if (res.tag === 'final' && res.data.success) {
-      console.log('Pear app dropped:', res)
+      console.log('Pear app reset:', res)
       resolve()
     }
   })
