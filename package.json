@@ -9,12 +9,17 @@
     "index.js"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "description": "Helper to create a Pear IPC client",
+  "imports": {
+    "path": {
+      "bare": "bare-path",
+      "default": "path"
+    }
+  },
   "dependencies": {
     "b4a": "^1.6.7",
     "bare-path": "^3.0.0",
-    "path": "npm:bare-node-path",
     "pear-ipc": "^5.4.0",
     "sodium-native": "^5.0.6",
     "which-runtime": "^1.3.0"
