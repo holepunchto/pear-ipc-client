@@ -7,3 +7,7 @@ const pearDir = Pear.config.pearDir
 const ipc = createIPC(pearDir)
 await ipc.ready()
 ```
+
+## License
+
+Apache-2.0
