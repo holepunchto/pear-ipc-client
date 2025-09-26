@@ -2,7 +2,7 @@
 
 Helper to create a Pear IPC client
 
-``` js
+```js
 const pearDir = Pear.config.pearDir
 const ipc = createIPC(pearDir)
 await ipc.ready()
